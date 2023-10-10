@@ -1,0 +1,25 @@
+[project]
+name = "playground"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "jlshix", email = "jlshix@163.com" }
+]
+dependencies = [
+    "pydantic>=2.4.2",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.9.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
